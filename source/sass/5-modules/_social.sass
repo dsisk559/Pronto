@@ -1,0 +1,36 @@
+.social
+  display: flex
+  flex-direction: column
+  position: absolute
+  right: 35px
+  top: 50px
+
+  a
+    display: block
+    @include ease
+  
+    &:hover path,
+    &:active path
+      fill: #c4c4c4
+      @include ease
+
+@media screen and (max-width: 1250px)
+  .social
+    right: 10px
+
+@media screen and (max-width: 1170px)
+  .social
+    display: none
+
+@media screen and (max-width: 900px)
+  .social
+    display: flex
+    flex-direction: row
+    top: 35px
+
+    a
+      padding: 0 5px
+
+@media screen and (max-width: 625px)
+  .social
+    display: none

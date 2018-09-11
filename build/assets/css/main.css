@@ -1,7 +1,8 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize * */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,500,600,900");
 html {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
@@ -344,6 +345,86 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 22px;
+  margin: 15px 0;
+  padding: 0 25px; }
+  nav .nav-button {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    cursor: pointer;
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+    display: none; }
+    nav .nav-button svg path {
+      fill: #000000;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+    nav .nav-button:hover svg path,
+    nav .nav-button:active svg path {
+      fill: #c4c4c4;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+  nav a {
+    display: block;
+    text-transform: lowercase;
+    color: #000000;
+    text-decoration: none;
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s; }
+    nav a:hover, nav a:focus {
+      color: #c4c4c4;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+
+@media screen and (max-width: 1025px) {
+  nav {
+    font-size: 18px; } }
+
+@media screen and (max-width: 900px) {
+  nav {
+    font-size: 22px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 95px;
+    overflow: hidden;
+    -webkit-transition: all .75s;
+    -o-transition: all .75s;
+    transition: all .75s; }
+    nav a:nth-of-type(1) {
+      margin-top: 10px; }
+    nav .logo {
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; }
+    nav .nav-button {
+      display: block; }
+    nav.show {
+      height: 300px; } }
+
 .preloader {
   background-color: #ffffff;
   width: 100%;
@@ -498,7 +579,59 @@ hr {
 .preloader.invisible {
   opacity: 0; }
 
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  right: 35px;
+  top: 50px; }
+  .social a {
+    display: block;
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s; }
+    .social a:hover path,
+    .social a:active path {
+      fill: #c4c4c4;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+
+@media screen and (max-width: 1250px) {
+  .social {
+    right: 10px; } }
+
+@media screen and (max-width: 1170px) {
+  .social {
+    display: none; } }
+
+@media screen and (max-width: 900px) {
+  .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    top: 35px; }
+    .social a {
+      padding: 0 5px; } }
+
+@media screen and (max-width: 625px) {
+  .social {
+    display: none; } }
+
 html, body {
   height: 100%; }
+
+.hero {
+  height: 200px;
+  background: yellow; }
 
 /*# sourceMappingURL=main.css.map */
